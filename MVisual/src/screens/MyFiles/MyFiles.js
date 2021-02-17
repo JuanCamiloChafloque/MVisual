@@ -12,7 +12,7 @@ const MyFilesScreen = () => {
     return (
         <View style={styles.myFilesScreenContainer}>
             <View style={styles.titleContainer}>
-                <Text style={styles.titleText}>Archivos</Text>
+                <Text style={styles.titleText}>Archivos!!!!</Text>
             </View>
             <View style={styles.recentContainer}>
                 <Text style={styles.recentTitle}>Recientes</Text>
