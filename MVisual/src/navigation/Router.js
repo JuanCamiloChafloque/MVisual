@@ -15,7 +15,7 @@ const Router = () => {
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }} >
                 <Stack.Screen
-                    name={'MyFilesScreen'}
+                    name={'Main Files Page'}
                     component={TabNavigator}
                 />
             </Stack.Navigator>
