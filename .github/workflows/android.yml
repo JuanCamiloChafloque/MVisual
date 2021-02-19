@@ -14,7 +14,7 @@ jobs:
 
     - run: npm install
 
-    - run: ../../MVisual/android/gradlew assembleDebug -Dorg.gradle.logging.level=info
+    - run: gradle wrapper
       working-directory: android
       name: Build Android apk (debug)
 
