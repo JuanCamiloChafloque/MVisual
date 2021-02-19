@@ -14,8 +14,8 @@ jobs:
 
     - run: npm install
     
-    - run: ./gradlew assembleDebug -Dorg.gradle.logging.level=info
-      path: ./MVisual/android
+    - run: MVisual/android/gradlew assembleDebug -Dorg.gradle.logging.level=info
+      working-directory: android
       name: Build Android apk (debug)
 
     - uses: actions/upload-artifact@v2
