@@ -14,8 +14,10 @@ jobs:
 
     - run: npm install
     
+    - name: Make gradlew executable
+    	run: chmod +x ./gradlew 
     - run: ./gradlew assembleDebug -Dorg.gradle.logging.level=info
-      working-directory: MVisual/android
+      working-directory: android
       name: Build Android apk (debug)
 
     - uses: actions/upload-artifact@v2
