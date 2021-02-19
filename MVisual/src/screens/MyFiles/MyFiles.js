@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Pressable } from 'react-native'
 import { StyleSheet } from 'react-native'
 import ImagePreview from '../../components/ImagePreview/ImagePreview'
 
@@ -24,10 +24,10 @@ const MyFilesScreen = () => {
             </View>
             <View style={styles.categoriesContainer}>
                 <Text style={styles.categoriesTitle}>Categorias</Text>
-                <View style={styles.categoriesSection}>
+                <Pressable style={styles.categoriesSection}>
                     <Image style={styles.categoriesImages} source={patientImage} />
                     <Text style={styles.categoriesText}>Pacientes</Text>
-                </View>
+                </Pressable>
                 <View style={styles.divider} />
                 <View style={styles.categoriesSection}>
                     <Image style={styles.categoriesImages} source={studyImage} />

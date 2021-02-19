@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, TextInput } from 'react-native'
+import { View, Text, StyleSheet, Image, TextInput, ScrollView } from 'react-native'
+import File from '../../components/File/File'
 
 
 const PatientsListScreen = (props) => {
@@ -14,6 +15,16 @@ const PatientsListScreen = (props) => {
                 </TextInput>
                 <Image style={styles.searchImage} source={require('../../../assets/images/search.png')} />
             </View>
+            <ScrollView>
+                <View style={styles.patientsView}>
+                    <File image={"patient"} label={"Juan Camilo Chafloque Mesia"} />
+                    <File image={"patient"} label={"Abel Santiago Cortes"} />
+                    <File image={"patient"} label={"Julio Andres Mejia Vera"} />
+                    <File image={"patient"} label={"Leonardo Flórez Valencia"} />
+                    <File image={"patient"} label={"Juan Sebastian Osorio Garcia"} />
+                    <File image={"patient"} label={"Sebastian Andres Rodriguez Fernandez"} />
+                </View>
+            </ScrollView>
         </View>
     )
 }
@@ -59,7 +70,12 @@ const styles = StyleSheet.create({
         position: 'absolute',
         right: 10,
         marginRight: 12
+    },
+
+    patientsView: {
+
     }
+
 })
 
 export default PatientsListScreen
