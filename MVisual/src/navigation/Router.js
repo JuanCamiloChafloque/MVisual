@@ -4,6 +4,7 @@ import MyFilesScreen from '../screens/MyFiles/MyFiles'
 import TabNavigator from './TabNavigator'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
+import PatientsListScreen from '../screens/PatientsList/PatientsList';
 
 
 const Stack = createStackNavigator();
@@ -17,6 +18,18 @@ const Router = () => {
                 <Stack.Screen
                     name={'Main Files Page'}
                     component={TabNavigator}
+                />
+                <Stack.Screen
+                    name={'Patients'}
+                    component={PatientsListScreen}
+                />
+                <Stack.Screen
+                    name={'Studies'}
+                    component={PatientsListScreen}
+                />
+                <Stack.Screen
+                    name={'Series'}
+                    component={PatientsListScreen}
                 />
             </Stack.Navigator>
         </NavigationContainer>

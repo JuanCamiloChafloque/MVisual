@@ -2,12 +2,27 @@ import React from 'react'
 import { View, Text, Image, Pressable } from 'react-native'
 import { StyleSheet } from 'react-native'
 import ImagePreview from '../../components/ImagePreview/ImagePreview'
+import { useNavigation } from '@react-navigation/native';
 
 const MyFilesScreen = () => {
 
     const patientImage = require('../../../assets/images/patient.png');
     const studyImage = require('../../../assets/images/studies.png');
     const seriesImage = require('../../../assets/images/series.png');
+
+    const navigation = useNavigation();
+
+    const goToPatients = () => {
+        navigation.navigate("Patients");
+    }
+
+    const goToStudies = () => {
+        navigation.navigate("Studies");
+    }
+
+    const goToSeries = () => {
+        navigation.navigate("Series");
+    }
 
     return (
         <View style={styles.myFilesScreenContainer}>
@@ -24,20 +39,20 @@ const MyFilesScreen = () => {
             </View>
             <View style={styles.categoriesContainer}>
                 <Text style={styles.categoriesTitle}>Categorias</Text>
-                <Pressable style={styles.categoriesSection}>
+                <Pressable onPress={goToPatients} style={styles.categoriesSection}>
                     <Image style={styles.categoriesImages} source={patientImage} />
                     <Text style={styles.categoriesText}>Pacientes</Text>
                 </Pressable>
                 <View style={styles.divider} />
-                <View style={styles.categoriesSection}>
+                <Pressable onPress={goToStudies} style={styles.categoriesSection}>
                     <Image style={styles.categoriesImages} source={studyImage} />
                     <Text style={styles.categoriesText}>Estudios</Text>
-                </View>
+                </Pressable>
                 <View style={styles.divider} />
-                <View style={styles.categoriesSection}>
+                <Pressable onPress={goToSeries} style={styles.categoriesSection}>
                     <Image style={styles.categoriesImages} source={seriesImage} />
                     <Text style={styles.categoriesText}>Series</Text>
-                </View>
+                </Pressable>
             </View>
         </View>
     )

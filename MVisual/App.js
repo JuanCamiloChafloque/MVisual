@@ -12,7 +12,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" backgroundColor='white' />
-      <PatientsListScreen />
+      <Router />
     </>
   );
 };
