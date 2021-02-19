@@ -14,8 +14,8 @@ jobs:
 
     - run: npm install
     
-    - name: Make gradlew executable
-    	run: chmod +x ./gradlew 
+    - run: chmod +x ./gradlew
+     
     - run: ./gradlew assembleDebug -Dorg.gradle.logging.level=info
       working-directory: android
       name: Build Android apk (debug)
