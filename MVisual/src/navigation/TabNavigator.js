@@ -2,9 +2,8 @@ import React from 'react'
 import { View, Text, StyleSheet, Colors, Image } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MyFilesScreen from '../screens/MyFiles/MyFiles';
-import ProcessImageScreen from '../screens/ProcessImage/ProcessImage';
+import ProcessImage from '../screens/ProcessImage/ProcessImage';
 import UploadImageScreen from '../screens/UploadImage/UploadImage';
-import SeriesbyPatient from '../screens/SeriesbyPatient';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,7 +35,7 @@ const TabNavigator = () => {
             />
             <Tab.Screen
                 name={"Process Image"}
-                component={SeriesbyPatient}
+                component={ProcessImage}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
