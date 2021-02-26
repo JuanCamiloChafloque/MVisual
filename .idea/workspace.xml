@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c0aad16-e0c3-4f8b-94ea-dd5d017e4c96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MVisual.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/bitmap/BitmapModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/bitmap/BitmapModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/bitmap/BitmapReactPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVisual/android/app/src/main/java/com/mvisual/bitmap/BitmapReactPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVisual/src/screens/UploadImage/UploadImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVisual/src/screens/UploadImage/UploadImage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oxFEPJD02tchl0eElv4jaPq5RW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c0aad16-e0c3-4f8b-94ea-dd5d017e4c96" name="Default Changelist" comment="" />
+      <created>1614220223410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614220223410</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="441" y="189" key="SettingsEditor" timestamp="1614220348769">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="441" y="189" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1614220348769" />
+  </component>
+</project>
