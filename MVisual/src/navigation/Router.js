@@ -5,6 +5,7 @@ import TabNavigator from './TabNavigator'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import PatientsListScreen from '../screens/PatientsList/PatientsList';
+import SeriesbyPatient from '../screens/SeriesbyPatient';
 
 
 const Stack = createStackNavigator();
@@ -30,6 +31,10 @@ const Router = () => {
                 <Stack.Screen
                     name={'Series'}
                     component={PatientsListScreen}
+                />
+                <Stack.Screen
+                    name={'SeriesbyPatient'}
+                    component={SeriesbyPatient}
                 />
             </Stack.Navigator>
         </NavigationContainer>
