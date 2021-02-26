@@ -5,10 +5,10 @@ import File from '../components/File/File';
 import { useRoute } from '@react-navigation/native';
 
 
-export default function SeriesbyPatient() {
+export default function SeriesbyPatientStudy() {
     const navigation = useNavigation();
     const route = useRoute();
-
+    console.log(route)
     const handleBackButtonClick = e => {
         navigation.goBack();
     }
@@ -20,25 +20,29 @@ export default function SeriesbyPatient() {
                     <Image style={styles.sbp__backbtn} source={require('../../assets/icons/keyboard-left-arrow-button.png')} />
                 </TouchableOpacity >
                 <View style={styles.topContainer__right}>
-                    <Image style={styles.topContainer__rightImg} source={require('../../assets/images/avatar-5.jpg')} />
+                    {route.params.post === 'study' ?
+                        <Image style={styles.topContainer__rightImgStudy} source={require('../../assets/images/folder.png')} />
+                        :
+                        <Image style={styles.topContainer__rightImg} source={require('../../assets/images/avatar-5.jpg')} />
+                    }
                     <Text style={styles.topContainer__name}>{route.params.id}</Text>
                 </View>
             </View>
             <View style={styles.searchView}>
-                    <TextInput style={styles.textInput}>
-                    </TextInput>
-                    <Image style={styles.searchImage} source={require('../../assets/images/search.png')} />
+                <TextInput style={styles.textInput}>
+                </TextInput>
+                <Image style={styles.searchImage} source={require('../../assets/images/search.png')} />
+            </View>
+            <ScrollView>
+                <View>
+                    <File image={"series"} label={"arias_cerebup_serie12.png"} />
+                    <File image={"series"} label={"arias_cerebup_serie13.png"} />
+                    <File image={"series"} label={"arias_cerebup_serie14.png"} />
+                    <File image={"series"} label={"arias_cerebup_serie15.png"} />
+                    <File image={"series"} label={"arias_cerebup_serie16.png"} />
+                    <File image={"series"} label={"arias_cerebup_serie17.png"} />
                 </View>
-                <ScrollView>
-                    <View>
-                        <File image={"series"} label={"arias_cerebup_serie12.png"} />
-                        <File image={"series"} label={"arias_cerebup_serie13.png"} />
-                        <File image={"series"} label={"arias_cerebup_serie14.png"} />
-                        <File image={"series"} label={"arias_cerebup_serie15.png"} />
-                        <File image={"series"} label={"arias_cerebup_serie16.png"} />
-                        <File image={"series"} label={"arias_cerebup_serie17.png"} />
-                    </View>
-                </ScrollView>
+            </ScrollView>
         </View>
     )
 }
@@ -66,8 +70,13 @@ const styles = StyleSheet.create({
         width: 55,
         height: 55
     },
+    topContainer__rightImgStudy:{
+        alignSelf: 'flex-end',
+        width: 65,
+        height: 55
+    },
     searchView: {
-        marginTop:30,
+        marginTop: 30,
         marginBottom: 30,
         justifyContent: 'center'
     },
@@ -86,10 +95,10 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         paddingLeft: 15,
     },
-    topContainer__name:{
+    topContainer__name: {
         fontSize: 18,
         color: 'gray',
-        maxWidth:250,
+        maxWidth: 250,
     },
-    
+
 })
