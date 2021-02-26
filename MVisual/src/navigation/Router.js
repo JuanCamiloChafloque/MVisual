@@ -5,7 +5,9 @@ import TabNavigator from './TabNavigator'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import PatientsListScreen from '../screens/PatientsList/PatientsList';
-import SeriesbyPatient from '../screens/SeriesbyPatient';
+import SeriesbyPatientStudy from '../screens/SeriesbyPatientStudy';
+import Studies from '../screens/Studies';
+import Series from '../screens/Series';
 
 
 const Stack = createStackNavigator();
@@ -26,15 +28,15 @@ const Router = () => {
                 />
                 <Stack.Screen
                     name={'Studies'}
-                    component={PatientsListScreen}
+                    component={Studies}
                 />
                 <Stack.Screen
                     name={'Series'}
-                    component={PatientsListScreen}
+                    component={Series}
                 />
                 <Stack.Screen
-                    name={'SeriesbyPatient'}
-                    component={SeriesbyPatient}
+                    name={'SeriesbyPatientStudy'}
+                    component={SeriesbyPatientStudy}
                 />
             </Stack.Navigator>
         </NavigationContainer>

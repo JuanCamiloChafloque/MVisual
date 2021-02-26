@@ -6,16 +6,17 @@ const File = (props) => {
     const navigation = useNavigation();
     const name=''
     
-    const goToPatient = () => {
-        navigation.navigate("SeriesbyPatient",{id: props.label});
+    const goToPatientStudy = () => {
+        navigation.navigate("SeriesbyPatientStudy",{id: props.label,post: 'study'});
     }
     return (
-        <Pressable onPress={goToPatient}>
+        
+        <Pressable onPress={goToPatientStudy}>
             <View style={styles.container}>
                 {props.image == 'patient' ?
                     <Image style={styles.image} source={require("../../../assets/images/avatar-5.jpg")} /> :
                     props.image == 'series' ? <Image style={styles.image} source={require("../../../assets/images/testimage.png")} /> :
-                        <Image style={styles.image} source={require("../../../assets/images/avatar-2.jpg")} />
+                        <Image style={styles.imageStudy} source={require("../../../assets/images/folder.png")} />
                 }
                 <Text style={styles.label}>{props.label}</Text>
             </View>
@@ -38,7 +39,10 @@ const styles = StyleSheet.create({
         height: 60,
         borderRadius: 20
     },
-
+    imageStudy: {
+        width: 60,
+        height: 50,
+    },
     label: {
         paddingLeft: 15,
         fontSize: 18,
