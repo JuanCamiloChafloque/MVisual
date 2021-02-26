@@ -4,24 +4,52 @@ import { View, Text, StyleSheet, Image, ScrollView, TouchableHighlight, Pressabl
 
 const File = (props) => {
     const navigation = useNavigation();
-    const name=''
-    
-    const goToPatientStudy = () => {
-        navigation.navigate("SeriesbyPatientStudy",{id: props.label,post: 'study'});
+    const name = ''
+    console.log(props.label)
+    const goToPatient = () => {
+        navigation.navigate("SeriesbyPatientStudy", { id: props.label, post: 'patient' });
     }
-    return (
-        
-        <Pressable onPress={goToPatientStudy}>
-            <View style={styles.container}>
-                {props.image == 'patient' ?
-                    <Image style={styles.image} source={require("../../../assets/images/avatar-5.jpg")} /> :
-                    props.image == 'series' ? <Image style={styles.image} source={require("../../../assets/images/testimage.png")} /> :
+    const goToStudy = () => {
+        navigation.navigate("SeriesbyPatientStudy", { id: props.label, post: 'study' });
+    }
+    const goToSeries = () => {
+        //Go to visualization
+        //navigation.navigate("SeriesbyPatientStudy", { id: props.label, post: 'study' });
+    }
+    if (props.image) {
+        if (props.image === 'patient')
+            return (
+                <Pressable onPress={goToPatient}>
+                    <View style={styles.container}>
+                        <Image style={styles.image} source={require("../../../assets/images/avatar-5.jpg")} />
+                        <Text style={styles.label}>{props.label}</Text>
+                    </View>
+                </Pressable>
+            )
+        if (props.image === 'study')
+            return (
+                <Pressable onPress={goToStudy}>
+                    <View style={styles.container}>
                         <Image style={styles.imageStudy} source={require("../../../assets/images/folder.png")} />
-                }
-                <Text style={styles.label}>{props.label}</Text>
-            </View>
-        </Pressable>
-    )
+                        <Text style={styles.label}>{props.label}</Text>
+                    </View>
+                </Pressable>
+            )
+        if (props.image === 'series')
+            return (
+                <Pressable onPress={goToSeries}>
+                    <View style={styles.container}>
+                        <Image style={styles.image} source={require("../../../assets/images/testimage.png")} />
+                        <Text style={styles.label}>{props.label}</Text>
+                    </View>
+                </Pressable>
+            )
+    } else {
+        return (
+            <Text>hey</Text>
+        )
+    }
+
 }
 
 const styles = StyleSheet.create({
