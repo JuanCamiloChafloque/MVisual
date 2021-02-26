@@ -22,11 +22,11 @@ const TabNavigator = () => {
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
-                            source={require('../../assets/images/folder.png')}
+                            source={focused ?require('../../assets/images/files_selected.png'): require('../../assets/images/folder.png') }
                             resizeMode="contain"
                             style={{
-                                width: 25,
-                                height: 25,
+                                width: focused ? 30:25,
+                                height: focused ? 30:25,
 
                             }}
                         />
@@ -39,11 +39,11 @@ const TabNavigator = () => {
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
-                            source={require('../../assets/images/qr-code-scan.png')}
+                            source={focused ?require('../../assets/images/scan_selected.png'):require('../../assets/images/qr-code-scan.png')}
                             resizeMode="contain"
                             style={{
-                                width: 25,
-                                height: 25,
+                                width: focused ? 30:25,
+                                height: focused ? 30:25,
 
                             }}
                         />
@@ -56,11 +56,11 @@ const TabNavigator = () => {
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
-                            source={require('../../assets/images/photo.png')}
+                            source={focused ? require('../../assets/images/upload_selected.png'):require('../../assets/images/photo.png')}
                             resizeMode="contain"
                             style={{
-                                width: 25,
-                                height: 25,
+                                width: focused ? 30:25,
+                                height: focused ? 30:25,
 
                             }}
                         />
