@@ -8,6 +8,7 @@ import PatientsListScreen from '../screens/PatientsList/PatientsList';
 import SeriesbyPatientStudy from '../screens/SeriesbyPatientStudy';
 import Studies from '../screens/Studies';
 import Series from '../screens/Series';
+import HelloWorld from '../screens/C++ Hello World/Hellow World';
 
 
 const Stack = createStackNavigator();
@@ -37,6 +38,10 @@ const Router = () => {
                 <Stack.Screen
                     name={'SeriesbyPatientStudy'}
                     component={SeriesbyPatientStudy}
+                />
+                <Stack.Screen
+                    name = {'HelloWorld'}
+                    component = {HelloWorld}
                 />
             </Stack.Navigator>
         </NavigationContainer>

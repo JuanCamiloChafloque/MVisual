@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, Pressable } from 'react-native'
+import { View, Text, Image, Pressable, Button } from 'react-native'
 import { StyleSheet } from 'react-native'
 import ImagePreview from '../../components/ImagePreview/ImagePreview'
 import { useNavigation } from '@react-navigation/native';
@@ -22,6 +22,9 @@ const MyFilesScreen = () => {
 
     const goToSeries = () => {
         navigation.navigate("Series");
+    }
+    const goToHello = () => {
+        navigation.navigate("HelloWorld");
     }
 
     return (
@@ -52,6 +55,10 @@ const MyFilesScreen = () => {
                 <Pressable onPress={goToSeries} style={styles.categoriesSection}>
                     <Image style={styles.categoriesImages} source={seriesImage} />
                     <Text style={styles.categoriesText}>Series</Text>
+                </Pressable>
+                <View style={styles.divider} />
+                <Pressable onPress = {goToHello}>
+                    <Text style={styles.categoriesText}>HelloWorld</Text>
                 </Pressable>
             </View>
         </View>

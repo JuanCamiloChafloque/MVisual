@@ -1,0 +1,14 @@
+Executable : /home/juliom/Android/Sdk/ndk/23.0.7123448/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Android.mk
+NDK_APPLICATION_MK=/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Application.mk
+APP_ABI=x86
+NDK_ALL_ABIS=x86
+NDK_DEBUG=1
+APP_PLATFORM=android-21
+NDK_OUT=/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/lib
+helloworld
+jvmArgs : 
+

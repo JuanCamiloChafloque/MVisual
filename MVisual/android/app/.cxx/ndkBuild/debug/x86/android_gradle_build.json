@@ -1,0 +1,46 @@
+{
+  "buildFiles": [
+    "/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Android.mk",
+    "/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/home/juliom/Android/Sdk/ndk/23.0.7123448/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "buildTargetsCommand": "/home/juliom/Android/Sdk/ndk/23.0.7123448/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "helloworld-debug-x86": {
+      "buildCommand": "/home/juliom/Android/Sdk/ndk/23.0.7123448/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/lib /home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/obj/local/x86/libhelloworld.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "helloworld",
+      "files": [
+        {
+          "src": "/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/jni/NativeHelloWorld.cpp",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/juliom/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++/include -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++abi/include -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni -DANDROID -nostdinc++ -Wformat -Werror\u003dformat-security -mstackrealign -fno-strict-aliasing -std\u003dc++14 -fexceptions -frtti -Wall -Wextra -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/cpp -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../src/cpp -frtti -fexceptions"
+        },
+        {
+          "src": "/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib/jni/djinni_main.cpp",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/juliom/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++/include -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++abi/include -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni -DANDROID -nostdinc++ -Wformat -Werror\u003dformat-security -mstackrealign -fno-strict-aliasing -std\u003dc++14 -fexceptions -frtti -Wall -Wextra -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/cpp -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../src/cpp -frtti -fexceptions"
+        },
+        {
+          "src": "/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib/jni/djinni_support.cpp",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/juliom/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++/include -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++abi/include -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni -DANDROID -nostdinc++ -Wformat -Werror\u003dformat-security -mstackrealign -fno-strict-aliasing -std\u003dc++14 -fexceptions -frtti -Wall -Wextra -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/cpp -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../src/cpp -frtti -fexceptions"
+        },
+        {
+          "src": "/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../src/cpp/hello_world_impl.cpp",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/juliom/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++/include -I/home/juliom/Android/Sdk/ndk/23.0.7123448/sources/cxx-stl/llvm-libc++abi/include -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni -DANDROID -nostdinc++ -Wformat -Werror\u003dformat-security -mstackrealign -fno-strict-aliasing -std\u003dc++14 -fexceptions -frtti -Wall -Wextra -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../djinni/cpp -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib/jni -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../node_modules/djinni/support-lib -I/home/juliom/Escritorio/MVisual/MVisual/android/app/src/main/jni/../../../../../src/cpp -frtti -fexceptions"
+        }
+      ],
+      "output": "/home/juliom/Escritorio/MVisual/MVisual/android/app/build/intermediates/ndkBuild/debug/obj/local/x86/libhelloworld.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cppCompilerExecutable": "/home/juliom/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
