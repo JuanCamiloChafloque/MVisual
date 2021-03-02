@@ -21,7 +21,7 @@ const File = (props) => {
             return (
                 <Pressable onPress={goToPatient}>
                     <View style={styles.container}>
-                        <Image style={styles.image} source={require("../../../assets/images/avatar-5.jpg")} />
+                        <Image style={styles.image} source={require("../../assets/images/avatar-5.jpg")} />
                         <Text style={styles.label}>{props.label}</Text>
                     </View>
                 </Pressable>
@@ -30,7 +30,7 @@ const File = (props) => {
             return (
                 <Pressable onPress={goToStudy}>
                     <View style={styles.container}>
-                        <Image style={styles.imageStudy} source={require("../../../assets/images/folder.png")} />
+                        <Image style={styles.imageStudy} source={require("../../assets/images/folder.png")} />
                         <Text style={styles.label}>{props.label}</Text>
                     </View>
                 </Pressable>
@@ -39,7 +39,16 @@ const File = (props) => {
             return (
                 <Pressable onPress={goToSeries}>
                     <View style={styles.container}>
-                        <Image style={styles.image} source={require("../../../assets/images/testimage.png")} />
+                        <Image style={styles.image} source={require("../../assets/images/testimage.png")} />
+                        <Text style={styles.label}>{props.label}</Text>
+                    </View>
+                </Pressable>
+            )
+        if (props.image === 'processed')
+            return (
+                <Pressable onPress={goToSeries}>
+                    <View style={styles.container}>
+                        <Image style={styles.image} source={require("../../assets/images/processed_static.png")} />
                         <Text style={styles.label}>{props.label}</Text>
                     </View>
                 </Pressable>

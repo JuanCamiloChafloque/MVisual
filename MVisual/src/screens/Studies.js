@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Image, TextInput, ScrollView,StyleSheet } from 'react-native'
-import File from '../components/File/File'
+import File from '../components/File'
 
 export default function Studies() {
     return (
