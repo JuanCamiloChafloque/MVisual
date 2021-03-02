@@ -4,7 +4,7 @@ import MyFilesScreen from '../screens/MyFiles/MyFiles'
 import TabNavigator from './TabNavigator'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
-import PatientsListScreen from '../screens/PatientsList/PatientsList';
+import PatientsListScreen from '../screens/PatientsList';
 import SeriesbyPatientStudy from '../screens/SeriesbyPatientStudy';
 import Studies from '../screens/Studies';
 import Series from '../screens/Series';
