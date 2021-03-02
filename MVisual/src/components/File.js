@@ -44,7 +44,7 @@ const File = (props) => {
                     </View>
                 </Pressable>
             )
-        if (props.image === 'procesadas')
+        if (props.image === 'processed')
             return (
                 <Pressable onPress={goToSeries}>
                     <View style={styles.container}>
