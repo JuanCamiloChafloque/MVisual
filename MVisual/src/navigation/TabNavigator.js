@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, Text, StyleSheet, Colors, Image } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MyFilesScreen from '../screens/MyFiles';
-import ProcessImage from '../screens/ProcessImage';
-import UploadImageScreen from '../screens/UploadImage';
+import MyFilesScreen from '../screens/MyFiles/MyFiles';
+import ProcessImage from '../screens/ProcessImage/ProcessImage';
+import UploadImageScreen from '../screens/UploadImage/UploadImage';
 
 const Tab = createBottomTabNavigator();
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Image, TextInput, ScrollView, StyleSheet } from 'react-native'
-import File from '../components/File'
+import File from '../components/File/File'
 
 export default function Series() {
     return (
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
-        paddingHorizontal: 35,
+        paddingHorizontal: 15,
         paddingVertical: 30
     },
 
