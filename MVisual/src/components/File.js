@@ -44,6 +44,15 @@ const File = (props) => {
                     </View>
                 </Pressable>
             )
+        if (props.image === 'procesadas')
+            return (
+                <Pressable onPress={goToSeries}>
+                    <View style={styles.container}>
+                        <Image style={styles.image} source={require("../../assets/images/processed_static.png")} />
+                        <Text style={styles.label}>{props.label}</Text>
+                    </View>
+                </Pressable>
+            )
     } else {
         return (
             <Text>hey</Text>

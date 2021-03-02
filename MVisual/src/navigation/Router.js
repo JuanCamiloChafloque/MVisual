@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import MyFilesScreen from '../screens/MyFiles/MyFiles'
 import TabNavigator from './TabNavigator'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, StackActions } from '@react-navigation/native';

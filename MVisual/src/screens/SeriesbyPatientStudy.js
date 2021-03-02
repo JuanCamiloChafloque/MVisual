@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     sbp: {
         width: '100%',
         height: '100%',
-        paddingHorizontal: 15,
+        paddingHorizontal: 30,
         paddingVertical: 30
     },
     sbp__backbtn: {

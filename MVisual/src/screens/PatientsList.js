@@ -7,13 +7,13 @@ const PatientsListScreen = (props) => {
     return (
         <View style={styles.container}>
             <View style={styles.topView}>
-                <Image style={styles.topImage} source={require('../../../assets/images/patient.png')} />
+                <Image style={styles.topImage} source={require('../../assets/images/patient.png')} />
                 <Text style={styles.title}>Por Paciente</Text>
             </View>
             <View style={styles.searchView}>
                 <TextInput style={styles.textInput}>
                 </TextInput>
-                <Image style={styles.searchImage} source={require('../../../assets/images/search.png')} />
+                <Image style={styles.searchImage} source={require('../../assets/images/search.png')} />
             </View>
             <ScrollView>
                 <View style={styles.patientsView}>
