@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
-import File from '../components/File/File';
+import File from '../components/File';
 import { useRoute } from '@react-navigation/native';
 
 
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     sbp: {
         width: '100%',
         height: '100%',
-        paddingHorizontal: 15,
+        paddingHorizontal: 30,
         paddingVertical: 30
     },
     sbp__backbtn: {

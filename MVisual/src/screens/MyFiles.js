@@ -1,14 +1,14 @@
 import React from 'react'
 import { View, Text, Image, Pressable, Button } from 'react-native'
 import { StyleSheet } from 'react-native'
-import ImagePreview from '../../components/ImagePreview/ImagePreview'
+import ImagePreview from '../components/ImagePreview'
 import { useNavigation } from '@react-navigation/native';
 
 const MyFilesScreen = () => {
 
-    const patientImage = require('../../../assets/images/patient.png');
-    const studyImage = require('../../../assets/images/studies.png');
-    const seriesImage = require('../../../assets/images/series.png');
+    const patientImage = require('../../assets/images/patient.png');
+    const studyImage = require('../../assets/images/studies.png');
+    const seriesImage = require('../../assets/images/series.png');
 
     const navigation = useNavigation();
 
