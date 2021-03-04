@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, Colors, Image } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MyFilesScreen from '../screens/MyFiles';
-import ProcessImage from '../screens/ProcessImage';
+import Canva from '../screens/Canva';
 import UploadImageScreen from '../screens/UploadImage';
 
 const Tab = createBottomTabNavigator();
@@ -35,7 +35,7 @@ const TabNavigator = () => {
             />
             <Tab.Screen
                 name={"Process Image"}
-                component={ProcessImage}
+                component={Canva}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image

@@ -9,7 +9,7 @@ import {
 import RNSketchCanvas from '@terrylinla/react-native-sketch-canvas';
 
 
-export default class CanvaTest extends Component {
+export default class Canva extends Component {
     
   render() {
     
