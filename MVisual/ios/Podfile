@@ -10,6 +10,8 @@ target 'MVisual' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
+  pod 'RNSketchCanvas', :path => '../node_modules/@terrylinla/react-native-sketch-canvas'
+
   target 'MVisualTests' do
     inherit! :complete
     # Pods for testing

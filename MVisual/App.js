@@ -4,13 +4,12 @@ import {
   StatusBar,
 } from 'react-native';
 import Router from './src/navigation/Router';
-
+import CanvaTest from './src/screens/CanvaTest';
 
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor='white' />
-      <Router />
+      <CanvaTest/>
     </>
   );
 };
