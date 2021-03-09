@@ -18,7 +18,7 @@ export default class Canva extends Component {
         <View style={{ flex: 1, flexDirection: 'row' }}>
           <RNSketchCanvas
             strokeColors={[{ color: '#FF0000' }, {color: '#0000FF'}, {color: '#00FF00'}]}
-            localSourceImage={{ filename: 'testimage.png', directory: '', mode: 'AspectFit' }}
+            localSourceImage={{ filename: 'testimage.png', directory: null, mode: 'AspectFit' }}
             containerStyle={{ backgroundColor: 'black', flex: 1 }}
             canvasStyle={{ backgroundColor: 'transparent', flex: 1 }}
             defaultStrokeIndex={0}

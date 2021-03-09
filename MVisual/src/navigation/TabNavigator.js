@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MyFilesScreen from '../screens/MyFiles';
 import Canva from '../screens/Canva';
 import UploadImageScreen from '../screens/UploadImage';
+import CanvaTest from '../screens/CanvaTest';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,7 +53,7 @@ const TabNavigator = () => {
             />
             <Tab.Screen
                 name={"Upload Image"}
-                component={UploadImageScreen}
+                component={CanvaTest}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
