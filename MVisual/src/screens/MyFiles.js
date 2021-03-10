@@ -127,6 +127,7 @@ const styles = StyleSheet.create({
         borderBottomColor: 'lightgray',
         borderBottomWidth: 1,
     }
+
 })
 
 

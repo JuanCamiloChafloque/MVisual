@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
-import {View, Text, Image, Button} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Image, Button, StyleSheet } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
 
 const UploadImage = () => {
   const [photo, setPhoto] = useState(null);
-  handleChoosePhoto = () => {
+  const [sliderW, setSliderW] = useState(false);
+  const [sliderL, setSliderL] = useState(false);
+
+  const handleChoosePhoto = () => {
     const options = {
       noData: true,
     };
@@ -12,17 +15,58 @@ const UploadImage = () => {
       console.log('response', response);
       if (response.uri) {
         setPhoto(response);
+        setSliderW(true);
+        setSliderL(true);
       }
     });
   };
+
+  const goToCanvaDisplay = () => {
+
+  }
+
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      {photo && (
-        <Image source={{uri: photo.uri}} style={{width: 300, height: 300}} />
-      )}
-      <Button title="Choose Photo" onPress={handleChoosePhoto} />
+    <View style={styles.container}>
+      <View style={styles.buttonContainer}>
+        <Button title="Cargar Foto de Almacenamiento" onPress={handleChoosePhoto} style={styles.button} />
+      </View>
+      <View>
+        {photo && <Image source={{ uri: photo.uri }} style={styles.image} />}
+      </View>
+      <View style={styles.buttonNext}>
+        {(sliderW && sliderL) && <Button title="Procesar Imagen" onPress={goToCanvaDisplay} style={styles.next} />}
+      </View>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+
+  container: {
+    width: '100%',
+    height: '100%',
+    marginTop: 50,
+    paddingHorizontal: 10,
+    alignItems: 'center'
+  },
+
+  image: {
+    width: 400,
+    height: 400
+  },
+
+  button: {
+    width: '100%',
+  },
+
+  buttonContainer: {
+    marginBottom: 20
+  },
+
+  buttonNext: {
+    marginTop: 60
+  }
+
+})
 
 export default UploadImage;
