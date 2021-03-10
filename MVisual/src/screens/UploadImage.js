@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, Image, Button, StyleSheet } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
+import { useNavigation } from '@react-navigation/native';
 
 const UploadImage = () => {
+
+  const navigation = useNavigation();
+
   const [photo, setPhoto] = useState(null);
   const [sliderW, setSliderW] = useState(false);
   const [sliderL, setSliderL] = useState(false);
@@ -22,7 +26,7 @@ const UploadImage = () => {
   };
 
   const goToCanvaDisplay = () => {
-
+    navigation.navigate("CanvasDisplay", { image: photo });
   }
 
   return (
