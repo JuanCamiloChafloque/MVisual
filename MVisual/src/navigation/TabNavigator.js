@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MyFilesScreen from '../screens/MyFiles';
 import ProcessImage from '../screens/ProcessImage';
 import UploadImageScreen from '../screens/UploadImage';
+import TakePictureScreen from '../screens/TakePicture';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,11 +23,11 @@ const TabNavigator = () => {
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
-                            source={focused ?require('../../assets/images/files_selected.png'): require('../../assets/images/folder.png') }
+                            source={focused ? require('../../assets/images/files_selected.png') : require('../../assets/images/folder.png')}
                             resizeMode="contain"
                             style={{
-                                width: focused ? 30:25,
-                                height: focused ? 30:25,
+                                width: focused ? 30 : 25,
+                                height: focused ? 30 : 25,
 
                             }}
                         />
@@ -39,11 +40,11 @@ const TabNavigator = () => {
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
-                            source={focused ?require('../../assets/images/scan_selected.png'):require('../../assets/images/qr-code-scan.png')}
+                            source={focused ? require('../../assets/images/scan_selected.png') : require('../../assets/images/qr-code-scan.png')}
                             resizeMode="contain"
                             style={{
-                                width: focused ? 30:25,
-                                height: focused ? 30:25,
+                                width: focused ? 30 : 25,
+                                height: focused ? 30 : 25,
 
                             }}
                         />
@@ -52,15 +53,15 @@ const TabNavigator = () => {
             />
             <Tab.Screen
                 name={"Upload Image"}
-                component={UploadImageScreen}
+                component={TakePictureScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image
-                            source={focused ? require('../../assets/images/upload_selected.png'):require('../../assets/images/photo.png')}
+                            source={focused ? require('../../assets/images/upload_selected.png') : require('../../assets/images/photo.png')}
                             resizeMode="contain"
                             style={{
-                                width: focused ? 30:25,
-                                height: focused ? 30:25,
+                                width: focused ? 30 : 25,
+                                height: focused ? 30 : 25,
 
                             }}
                         />
